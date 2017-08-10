@@ -12,9 +12,7 @@ except ImportError:
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION=open('commit-version').read().strip()
-print("Preparing version {0}\n".format(VERSION or "NOTFOUND"), file=sys.stderr)
-
+VERSION='master'
 
 try:
     long_description = open('DESCRIPTION.rst', 'rt').read()
